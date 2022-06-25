@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Prata&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Lato:ital,wght@0,100;0,400;1,100&family=Prata&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Prata&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Prata&family=Work+Sans&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav
+{
+    height: 100px;
+}
+.logo
+{
+    margin-left: 42%;
+    width:15%;
+}
+.main
+{
+    background-image:linear-gradient( #fcfcfc, #d2bfa7);
+    height: 86vh;
+}
+.inside
+{
+    width: 100%;
+    /* height: 100px; */
+    padding-top: 3%;
+    transition: all 0.8s;
+}
+.inside2
+{
+    width: 30%;
+    height: 480px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 1%;
+    transition: all 0.8s;
+}
+.back
+{
+    height: 20px;
+    /* background-color: red; */
+    width: 100%;
+    padding-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 9%;
+}
+.back button
+{
+    border: none;
+    background-color: #9e8a78;
+    font-family: 'Prata', serif;
+    width: 80px;
+    height: 30px;
+    border-radius:2px;
+    color: white;
+}
+
+.quetion
+{
+    height: 170px;
+    margin-top: 10px;
+    border-bottom: 1px solid #9e8a78;
+}
+
+.photo
+{
+    width: 250px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.photo img
+{
+    width: 250px;
+    height: 130px;
+}
+.ansewr
+{
+    display: flex;
+}
+.group_answer
+{
+    margin-top: 10%;
+    margin-left: 8%;
+}
+.group2_answer
+{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+/* css checkboks */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #9e8a78;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* fin checkboks */
+
+
+
+/* css btn */
+
+.banner-btn{
+        
+  display: flex;
+  
+}
+
+.banner-btn a {
+ width: 120px;
+ text-decoration: none;
+ display: inline-block;
+ margin-top: 0%;
+ margin-left: 23%;
+ padding: 10px 0;
+ color: white;
+ text-align: center;
+ position: relative;
+ z-index: 1;
+ transition: color 0.5s;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: larger;
+ font-weight: bold;
+ background-color:#000000 ;
+ left: 11%;
+ top: 18px;
+ font-size: 10px;
+ font-family: "Raleway", sans-serif;
+}
+
+.banner-btn a span{
+ width: 0;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: white;
+ z-index: -1;
+ transition: 0.5s;
+}
+.banner-btn a:hover span{
+ width: 100%;
+ 
+}
+.banner-btn a:hover {
+ color: #000000;
+ border: 0px solid white;
+}
+
+.back_score
+{
+  display: flex;
+}
+.score p
+{
+  margin-left: -130%;
+  margin-top: 50%;
+  color: #363636;
+}
+.next
+{
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  width: 100px;
+  height: 25px;
+  margin-left: 110%;
+}
+
+.quetion
+{
+  position: relative;
+  top: 30px; 
+  text-align: center;
+  border: 0;
+  font-size: 23px;
+  font-family: 'Prata', serif;
+}
+.div_quetion
+{
+  height: 130px;
+  /* background-color: red; */
+  border-bottom: 1px solid #9e8a78;
+}
