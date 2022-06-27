@@ -1,6 +1,7 @@
 <?php
 session_start();
 ?>
+<?php if(isset($_SESSION['user'])):?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,3 +37,7 @@ session_start();
 </section>
 </body>
 </html>
+<?php else :        header("location: index.php");
+?>
+
+<?php endif?>

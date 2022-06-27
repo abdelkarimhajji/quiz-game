@@ -1,6 +1,10 @@
 <?php 
     session_start();
 ?>
+<?php if(isset($_SESSION['user'])): header("location: menu.php");?>
+
+<?php else :  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,3 +62,4 @@
     <script src="JS/main.js"></script>
 </body>
 </html>
+<?php endif; ?>
